@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAKSElEQVR42u1ZeVRU5xUviolNoh6RRRZxw7iTtLhhbWNd0kStptG4YDEpiXWJG4laqcbdiFalxgU1Vot41CSiEgQVNARRCCqgIqjsKiCCgMMww+y/3vsOY8MZmPcGNfrH+51zz3AO8+537+/+7v2+782vZMiQIUOGDBkyZMiQIUPGE0Kn0/U3mUzHABSTHSXzelKfAFobjcaNdT4zyIa/iLnbUfKzABiqkq7jctAMPMq8BEIl2cim+qysrPQkQrOMahUuzVyH/N3RIJiIkMUvVPIqlSqAA7ux4r9Y6+yM1Y6O2ODujJwDm0HQkv3BVp+lpaXOlGiBMicTu7p0Yp+CxQyfCQb9b8kLkXxFRcVgAJqMVWFY4+iMqCG9kL+gO86M7oT1rs64c3wvCBU2tINdfHx8S1JUsqa0CDu6umG3RxdkuK5BQvtPEezoYSbBZDAYxj/X5G/fvu1IlSgpjb6MDU6euOQaBOPaIcBWb8Fuznodmzu6CO1AUk4F0EKC32ZqtToEBgMO9u+Ob3q3g6LfHNR4fC9YoXsoNjl1xpX520BQkvV8XgQ0p0C/01cqsc2tL1JcFwsBmoJ9OfnHljG9G/YP8IJJp2HZrhcj9cGDByNZ4ednTkR4D0coPmgLpU8g+35sBe47BRJKTwrEXgFg/zykPwmEk0OnI7r91MfBGdcJCqhncWM64vy8CSDoyfo05vPMmTOvkqzvlMadQGhnJ1S83xbVTEC/Bey7nqW7rsBuzwEwafVM7LJfNPm4uLg2LP2CPTHY4zwASo8T/ydg+QgLAkz/9kZYPw88vHyWK3YBgF1D0q+url7P0t/fxxMFoxw4ecGUg6ZbEEBGxPvhxwlB5kH7+i9FAAe6hZnf02Eg7rrvqReUYeE4TtrCKpb3wqG3eoJBVQ5oYJ70IHI0lxYGIMG3LnkzAb+f1CABCo8I7HLxQWXSTSY2mv088+rn5OT0YsaT/vYlTeU5FkHp/v4hJ9ygpfh1QVbochDKyVr/fJ7U1taeVt/Nw6HeLpx0fQKGD2ffDVqu+1Yc8X7PTOyoZz74aM8/ri54gH1uQ8zSr2faiYGNEgBqhYhh3WBQKbhvV5pJLSoqGg5C7IQ/onCMgyUBo73Zd6MW6fIB8nadZBVkAmj2zKqfl5fXH4DpzDvzkO22ucFgaodu4GQbtftBPXF5eQAICjIH8mtP1b9YdSURZwc4csKWNsEJNZ4nGiXgocdhHOz2J7MKpj6z6rNMq2/cwTH3vzQajKp3GCdq1RKn9IJRXQ29Xr/h3r17o0CInzwMleM54YZN9WaYVRUkuX6GrPWHWQU5AJo/9epnZ2cPBOHU8Fkocv/aajCmrwZbJUAd3Ac3ty0GoYZOfNeVWem4OsKZErVCwLDNVtfkdjziNcasAv+nXn2lUvmdOu8+Ytz9eUHrBGyfLKqC3MUDYdJrwchcOJmTtE7A+4tE173iuhS5O75nFVx7mjuCXWpqqhcAfcKEpSj1OCAaiHHnF6IEGEO8UXIsBLX38lH4XntxAj6azL5FLdb3UxC4vd5+atWvqqraqq9S4VSnjyQFYYyN5iRFrWLTCJSEzOcERa12ywyousWIq8B9KSqTb7MKYp6GCuxWrlz5Cm1Z5emLdpsPPVZN1T0GUCuBbb8VJyGkL8r9PCURoP/hIDRTf+I1RGdB8oQ1IBhpaHd84lMf7dHTQEjo/7mk6mumpUDAt/6iBOiXeXFyksxUfg+60FxJMaR0/Sf4kkaFW/2kBNjTje+Hstg0uo+vlbS4fm8+BCTvECVA/XF7ScnXzOsHhjFTISkGPhekLdjJbVAEwK7J8o+MjHQDoLvkt4EcR0pa3FSkhoDyW1aTN/2rF5QSq68JXwEz1L5nJcWRPGgZGFRA3ybLv7i4eA4IaW+slrRo7ejzYNDQjAMjbHSjBOgWd5Ysf2NOKugIfg2ASbc2S1Ist902QXG9UDhsNVn+NTU1Z/mlQ7H7fyQtqtuZy31XERQU5AvAgAshVuTvIk3+s/qCkZ6ePp/iuWxMr+K1JNmNz/ZxG9xqym5gFxAQ0IoeVmUHHpK0mKpDFEx31VAoFAfoeWe6Miej7GbDBGzqY4v8OYnawMBA98zMzJWCrAdLa4Obb28HQ6vV9rBZ/levXhVuF4WjD0qT/5RkMOjIPIKef5UOT4vAODzJcvov7yZ9+hfngE6hR8nnyzNmzHiDyNDqtuVIiqmgSygMNbWg4/Z8mw8/JSUl6wwqDUq7SiPAcLKEmb5Nz7bg9hk6dKgXtUM1rn9jQYBmfgdJyau/eBeMwsLCd9knWbuHDx9GmR5ooOp0UkJckSg9+hPfDcJsbQN7GmTHlUn5kpJX+8QCehPKysqCWD111pZIDIdODewa0qTtT58cydXL9fHxaVGXQMvo6Gg/EDQzrkjbErck8Vyy+W7wEp2iMtQR0qSm35PHizwKCwtrxwvV2csbN258C4ARF7fWI6BmSjvx4TfnNyCnIBID6whlsApcaUe4Ycx4JCm2ys8TQNDS/HjJFgL47WyZaluG+PDzPgOoDSgvLw/h1vl5G5E509vjU1BXAKGDIBCwpa/koy/FUB4cHNzGXL26z9eSk5PnCSrwTxGNT/HXeDAePXrU2RYC+AdJhWZLpnj19xeAvxsREeFRX2bC37/evn37SAAGpISadwDxm1+gr1B9Oof8QyCyvk97BweHDqTQW8YsBVQdo6wXaFIiCNyeNv1Q24YlTfu69cn/TgILnANdIcjTEoIK6He+IzBogLAxpADrBCgnOsCQeZEHasHs2bNfs+xdoR1anTp16kNB28tvWIuRVWImoJtNCmCGDdEljTrmq6npZjU0Gk3W3LlzWzcyZITB5efn9ya3FIrT+JZodQZo9i8BwXTt2rWxTGAjPplsN2qvaNQYoB4a32ic2i8yBH+5ubnONs0AGj5hUOih8oq2TN4zCoYTxeD3+OfOnRtsEahlxdrGxsZ+AsDI26JmjkfD296qcYBBz9X6mgexmdRGSHiFiaWj7n1TrhKqPqcb3p4TylhNaUKMNqBFeHj4aO5dmvAW931DVAkIBqrSx/xdkS3Gru47brdu3doolOPCbtT4OdZ/4bGZFK2t5UNPwsCBA1ubJ78YsXv37v0znzdM2Uqof3euvvw/uQwGKWWVuD/L3nXJz8//CgTjhXJo12SCZ4KpTMOVr0lLS5vJ8pa4vwrbIlkH2o6+BJ8aijOgPbCEJB8Ew/UfwaisrIwZO3asC68vwa+5FZyoWONZCdAaoT9yF9rVmdBH3GO98SXqkuUskR6wZ2Ji4jyaB9kAdNzHhG937NgxhCe8jU7t6gjz2Ldv3ziqymkmksmgS05qSkrKXK6opOQt1eXk7+/f786dO7tI7pQ5tDSbculXrOBp06a5i8hflASuSGcyL7KOZO1E+lNKwA5MLvts2bJlF/pszz1tkbx0n/xcKzJOlv11ZaJ5mIv4lOzc3nzG514SdSjus5nZZ501f0o+m7M/i1hlyJAhQ4YMGTJkyJAhQ0Z9/A/MGjKdMt/y6AAAAABJRU5ErkJggg=="
+      sizes="64x64"/>
+ <title>Online Shopping for Women, Men, Kids Fashion & Lifestyle - Mittra</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+
+  <div class="container">
+     <video src="/assets/backvideo.mp4 " autoplay muted loop class="video"></video>
+
+     <header class="header">
+          <div class="logo">
+            <h2>
+            <span class="material-symbols-outlined">
+              diamond 
+              </span></h2>
+              <a href="#">
+                <h2>Mittra</h2>
+              </a>
+          </div>
+
+           <nav class="nav">
+            <a href="#container2">Men</a>
+            <a href="#container3">Women</a>
+            <a href="#container4">Children</a>
+            <a href="#container5">Offers</a>
+            <a href="#container6">Contact Us</a>
+           </nav>
+
+           <div class="icons">
+            <a id="search" href="#/"><span class="material-symbols-outlined">
+              search
+              </span></a>
+              <a id="favourite" href="#/"><span class="material-symbols-outlined">
+                favorite
+                </span></a>
+              <a id="checkout" href="#/"><span class="material-symbols-outlined">
+                shopping_cart
+                </span></a>
+              <a id="login" href="#/"><span class="material-symbols-outlined">
+                login
+                </span></a>
+           </div>
+     </header>
+   
+     <div class="maintext">
+      <div class="leftside">
+        <div class="first">
+          <p>Style is a way to say who you are without having to speak.</p>
+        </div>
+        <div class="second">
+          <h3>Get all the latest trends clothes at affordable rates.</h3>
+        </div>
+        <button>Shop Now <span class="material-symbols-outlined">
+          shopping_cart
+          </span></button>
+      </div>
+      <div class="rightside">
+        <img src="/assets/pic-main.png" alt="image">
+      </div>
+     </div>
+  </div>
+
+
+  <div class="searchbar">
+    <h1>Search.......</h1>
+    <a href="#">
+      <span class="material-symbols-outlined">
+        search
+        </span>
+    </a>
+  </div>
+  <div class="favourite">
+
+    <h1>You have not added anything yet.</h1>
+    
+  </div>
+  <div class="checkout">
+    <div class="checkbox">
+      <img src="/assets/top 2.jpg" alt="image">
+      <h2>Long Blazer</h2>
+      <p>Qty : 1</p>
+      <span class="material-symbols-outlined">
+        add
+        </span><span class="material-symbols-outlined">
+          delete
+          </span>
+    </div>
+
+
+    <div class="checkbox">
+      <img src="/assets/top 4.jpg" alt="image">
+      <h2>Stiped White Shirt</h2>
+      <p>Qty : 1</p>
+      <span class="material-symbols-outlined">
+        add
+        </span><span class="material-symbols-outlined">
+          delete
+          </span>
+    </div>
+
+    <div class="checkbox">
+      <img src="/assets/top 3.jpg" alt="image">
+      <h2>Black Coat</h2>
+      <p>Qty : 1</p>
+      <span class="material-symbols-outlined">
+        add
+        </span><span class="material-symbols-outlined">
+          delete
+          </span>
+    </div>
+
+    <button>Checkout<span class="material-symbols-outlined">
+      shopping_cart
+      </span></button>
+
+  </div>
+  <div class="login">
+
+    <input type="text" name="" id="username" placeholder="Username">
+    <input type="password" name="" id="password" placeholder="Password">
+    <a href="#">Forgot Password</a>
+    <button>Login</button>
+
+  </div>
+
+
+
+
+
+<section id="container2">
+
+  <div class="container2">
+    <p class="heading">Men</p>
+    <div class="underline"></div>
+    <div class="mens">
+      <div class="products">
+        <div class="top">
+          <img class="product4" src="/assets/top 1.jpg" alt="image">
+        </div>
+        <div class="bottom">
+          <h1>Zara T-Shirt</h1>
+          <p><span class="material-symbols-outlined">
+            star
+            </span><span class="material-symbols-outlined">
+              star
+              </span><span class="material-symbols-outlined">
+                star
+                </span><span class="material-symbols-outlined">
+                  star
+                  </span>
+                  <span class="material-symbols-outlined">
+                    star_half
+                    </span></p>
+                    <h3>₹ 1499.00</h3>
+                    <button>Add To Cart <a href=""><span class="material-symbols-outlined">
+                      shopping_cart
+                      </span></a></button>
+        </div>
+      </div>
+      <div class="products">
+        <div class="top">
+          <img class="product5" src="/assets/shoe 1.jpg" alt="image">
+        </div>
+        <div class="bottom">
+          <h1>Nike Shoes</h1>
+          <p><span class="material-symbols-outlined ">
+            star
+            </span><span class="material-symbols-outlined">
+              star
+              </span><span class="material-symbols-outlined">
+                star
+                </span><span class="material-symbols-outlined">
+                  star
+                  </span>
+                  <span class="material-symbols-outlined x">
+                    grade
+                    </span></p>
+                    <h3>₹ 1899.00</h3>
+                    <button>Add To Cart <a href=""><span class="material-symbols-outlined">
+                      shopping_cart
+                      </span></a></button>
+        </div>
+      </div>
+      <div class="products">
+        <div class="top">
+          <img class="product6" src="/assets/jean 1.jpg" alt="image">
+        </div>
+        <div class="bottom">
+          <h1>H&M Jeans</h1>
+          <p><span class="material-symbols-outlined">
+            star
+            </span><span class="material-symbols-outlined">
+              star
+              </span><span class="material-symbols-outlined">
+                star
+                </span><span class="material-symbols-outlined">
+                  star
+                  </span>
+                </span><span class="material-symbols-outlined">
+                  star
+                  </span></p>
+                    <h3>₹ 1299.00</h3>
+                    <button>Add To Cart <a href=""><span class="material-symbols-outlined">
+                      shopping_cart
+                      </span></a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<section id="container3">
+  <div class="container3">
+    <p class="heading">Women</p>
+    <div class="underline"></div>
+    <div class="mens">
+      <div class="products">
+        <div class="top">
+          <img class="product1" src="/assets/women-top.jpg" alt="image">
+        </div>
+        <div class="bottom">
+          <h1>H&M Sea-Green Dress</h1>
+          <p><span class="material-symbols-outlined">
+            star
+            </span><span class="material-symbols-outlined">
+              star
+              </span><span class="material-symbols-outlined">
+                star
+                </span>
+                <span class="material-symbols-outlined">
+                  star_half
+                  </span><span class="material-symbols-outlined x">
+                  star
+                  </span>
+                  </p>
+                    <h3>₹ 1999.00</h3>
+                    <button>Add To Cart <a href=""><span class="material-symbols-outlined">
+                      shopping_cart
+                      </span></a></button>
+        </div>
+      </div>
+      <div class="products">
+        <div class="top">
+          <img class="product2" src="/assets/women-shoe.jpg" alt="image">
+        </div>
+        <div class="bottom">
+          <h1>Skechers Shoes</h1>
+          <p><span class="material-symbols-outlined">
+            star
+            </span><span class="material-symbols-outlined">
+              star
+              </span><span class="material-symbols-outlined">
+                star
+                </span><span class="material-symbols-outlined">
+                  star
+                  </span>
+                  <span class="material-symbols-outlined">
+                    star_half
+                    </span></p>
+                    <h3>₹ 2599.00</h3>
+                    <button>Add To Cart <a href=""><span class="material-symbols-outlined">
+                      shopping_cart
+                      </span></a></button>
+        </div>
+      </div>
+      <div class="products">
+        <div class="top">
+          <img class="product3" src="/assets/women-jean.jpg" alt="image">
+        </div>
+        <div class="bottom">
+          <h1>Levis Black Jeans</h1>
+          <p><span class="material-symbols-outlined">
+            star
+            </span><span class="material-symbols-outlined">
+              star
+              </span><span class="material-symbols-outlined">
+                star
+                </span><span class="material-symbols-outlined">
+                  star
+                  </span>
+                </span><span class="material-symbols-outlined x">
+                  star
+                  </span></p>
+                    <h3>₹ 1799.00</h3>
+                    <button>Add To Cart <a href=""><span class="material-symbols-outlined">
+                      shopping_cart
+                      </span></a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+  <section id="container4">
+
+  <div class="container2">
+    <p class="heading">Children</p>
+    <div class="underline"></div>
+    <div class="mens">
+      <div class="products">
+        <div class="top">
+          <img class="product1" src="/assets/kids-top.jpg" alt="image">
+        </div>
+        <div class="bottom">
+          <h1>Tommy Black Shirt</h1>
+          <p><span class="material-symbols-outlined">
+            star
+            </span><span class="material-symbols-outlined">
+              star
+              </span><span class="material-symbols-outlined">
+                star
+                </span>
+                <span class="material-symbols-outlined">
+                  star
+                  </span><span class="material-symbols-outlined x">
+                  star
+                  </span>
+                  </p>
+                    <h3>₹ 699.00</h3>
+                    <button>Add To Cart <a href=""><span class="material-symbols-outlined">
+                      shopping_cart
+                      </span></a></button>
+        </div>
+      </div>
+      <div class="products">
+        <div class="top">
+          <img class="product2" src="/assets/kids-shoe.jpg" alt="image">
+        </div>
+        <div class="bottom">
+          <h1>Crocs Printed Shoes</h1>
+          <p><span class="material-symbols-outlined">
+            star
+            </span><span class="material-symbols-outlined">
+              star
+              </span><span class="material-symbols-outlined">
+                star
+                </span><span class="material-symbols-outlined">
+                  star
+                  </span>
+                  <span class="material-symbols-outlined">
+                    star_half
+                    </span></p>
+                    <h3>₹ 899.00</h3>
+                    <button>Add To Cart <a href=""><span class="material-symbols-outlined">
+                      shopping_cart
+                      </span></a></button>
+        </div>
+      </div>
+      <div class="products">
+        <div class="top">
+          <img class="product3" src="/assets/kids-top-2.jpg" alt="image">
+        </div>
+        <div class="bottom">
+          <h1>Floral Dress</h1>
+          <p><span class="material-symbols-outlined">
+            star
+            </span><span class="material-symbols-outlined">
+              star
+              </span><span class="material-symbols-outlined">
+                star
+                </span><span class="material-symbols-outlined">
+                  star
+                  </span>
+                </span><span class="material-symbols-outlined x">
+                  star
+                  </span></p>
+                    <h3>₹ 999.00</h3>
+                    <button>Add To Cart <a href=""><span class="material-symbols-outlined">
+                      shopping_cart
+                      </span></a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+  <section id="container5">
+
+  <div class="container4">
+    <p id="head" class="heading">Offers</p>
+    
+
+    <div class="offers2">
+
+      <div class="parts" >
+        <h1>Pay using your Credit Card</h1>
+        <p>Get upto 60% off on paying using ICICI Credit Cards</p>
+        <button>Apply Offer</button>
+        <img src="/assets/offers.jpg" alt="image">
+      </div>
+
+      <div class="parts" id="Black">
+        <h1>H&M Special Sale</h1>
+        <p>Get upto 50% off on clothes, shoes and many more.</p>
+        <button>Apply Offer</button>
+        <img src="/assets/offer2.jpg" alt="image">
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  <section id="container6">
+
+
+
+  <div class="footer">
+    <div class="upper">
+    
+      <div id="b">
+        <h1><span class="material-symbols-outlined">
+          diamond 
+          </span> Mittra</h1>
+         <p>We deliver the best quality clothes at the cheapest rates. Walk in style everywhere you go and be updated with the latest trends!</p>
+         <div class="images">
+          <img src="/assets/facebook.png" alt="image">
+          <img src="/assets/instagram.png" alt="image">
+          <img src="/assets/twitter.png" alt="image">
+          <img src="/assets/linkedin.png" alt="image">
+         </div>
+
+      </div>
+
+      <div id="b">
+      
+        <h1>Contact Info</h1>
+        <div class="iconsfooter">
+          <div class="matter">
+          <span class="material-symbols-outlined">
+            call
+            </span>+123-456-7890</div>
+
+            <div class="matter">
+              <span class="material-symbols-outlined">
+                call
+                </span>+122-333-4444</div>
+
+                <div class="matter">
+                  <span class="material-symbols-outlined">
+                    mail
+                    </span>fullstackdeveloper@gmail.com</div>
+                    <div class="matter">
+                      <span class="material-symbols-outlined">
+                        location_on
+                        </span>Jammu, J&K, India</div>
+        </div>
+
+      </div>
+
+      <div id="b">
+
+        <h1>Newsletter</h1>
+        <p>Get all the latest trends and updates. Never miss out on anything!</p>
+        <input class="input" type="email" name="" id="" placeholder="Email.........">
+        <button>Subscribe</button>
+
+      </div>
+
+    </div>
+    <div class="lower">
+
+      <h2>Designed and Developed by </h2>
+      <h1>Dishant Balotra</h1>
+
+    </div>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
