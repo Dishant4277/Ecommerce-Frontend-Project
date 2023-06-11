@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,18 +14,18 @@
   text-decoration: none;
 }
 
-:root{
+:root {
   --pink: #e79ea7;
-  --green:#d7fecf;
-  --blue:#90c6b9;
+  --green: #d7fecf;
+  --blue: #90c6b9;
 }
 
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
-.container{
+.container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -35,50 +34,40 @@ html{
   overflow: hidden;
 }
 
-.video{
+.video {
   width: 100%;
   height: 60rem;
-  position:relative;
+  position: relative;
   z-index: -100;
   right: 0;
 }
 
-
-.header{
+.header {
   width: 100%;
   height: 10vh;
   padding: true;
   z-index: 10000000;
-  position:fixed;
-  top:0;
+  position: fixed;
+  top: 0;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: black;
-  color:white;
+  color: white;
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }
-
 
 .x {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
-.header h2{
-  font-family: 'Kablammo', cursive;
-  color:white;
+.header h2 {
+  font-family: "Kablammo", cursive;
+  color: white;
   font-size: 3rem;
   background-color: black;
   background: #e79ea7;
@@ -91,7 +80,7 @@ html{
   -webkit-text-fill-color: transparent;
 }
 
-.span{
+.span {
   background-color: black;
   background: #e79ea7;
   background: radial-gradient(
@@ -101,29 +90,29 @@ html{
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-   font-weight: bolder;
+  font-weight: bolder;
 }
 
-.header a{
+.header a {
   color: white;
   font-size: 1.8rem;
   padding-left: 2rem;
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
   font-weight: lighter;
 }
 
-.logo{
+.logo {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.icons{
+.icons {
   padding-right: 2rem;
 }
 
-.maintext{
+.maintext {
   width: 95%;
-  height:90vh;
+  height: 90vh;
   background: transparent;
   position: absolute;
   top: 10%;
@@ -134,20 +123,20 @@ html{
   justify-content: flex-start;
 }
 
-.leftside{
+.leftside {
   width: 35%;
   height: 100%;
   background: transparent;
   display: flex;
   align-items: center;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   flex-direction: column;
   justify-content: space-evenly;
   color: white;
   padding: 1rem;
 }
 
-.first{
+.first {
   width: 80%;
   background-color: transparent;
   color: white;
@@ -157,8 +146,8 @@ html{
   text-align: center;
 }
 
-.rightside{
-  width:65%;
+.rightside {
+  width: 65%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -167,13 +156,13 @@ html{
   overflow: hidden;
 }
 
-.rightside img{
+.rightside img {
   width: 120%;
   height: 120%;
 }
 
-.second{
-  font-family: 'Cormorant SC', serif;
+.second {
+  font-family: "Cormorant SC", serif;
   width: 80%;
   height: 10%;
   background: white;
@@ -186,41 +175,40 @@ html{
   font-size: 1.6rem;
 }
 
-button{
+button {
   width: 60%;
   height: 4rem;
   border-radius: 2rem;
   background: black;
   color: var(--pink);
   border: 2px solid white;
-  font-family: "Pacifico",cursive;
+  font-family: "Pacifico", cursive;
   font-size: 2rem;
   transition: 1s;
 }
 
-button:hover{
+button:hover {
   word-spacing: 0.5rem;
   font-size: 2.2rem;
   cursor: pointer;
   padding-left: 1rem;
 }
 
-
-.container2{
+.container2 {
   width: 100%;
   height: auto;
   background: black;
 }
 
-.heading{
+.heading {
   color: white;
   font-size: 4rem;
   padding-top: 4rem;
   text-align: center;
-  font-family: "Pacifico",cursive;
+  font-family: "Pacifico", cursive;
 }
 
-.underline{
+.underline {
   background: white;
   height: 0.5rem;
   width: 35%;
@@ -230,22 +218,22 @@ button:hover{
   left: 33%;
 }
 
-.mens{
+.mens {
   width: 100%;
   height: auto;
-  background-color:transparent;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.products{
+.products {
   transition: 0.5s;
   border-radius: 2rem;
   width: 30rem;
   height: 48rem;
-  background:transparent;
+  background: transparent;
   color: white;
   display: flex;
   align-items: center;
@@ -255,46 +243,46 @@ button:hover{
   margin: 8rem;
 }
 
-.top{
-width: 100%;
-height: 60%;
-background: transparent;
-display: flex;
-align-items: center;
-justify-content: center;
+.top {
+  width: 100%;
+  height: 60%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.top img{
+.top img {
   width: 100%;
   height: 100%;
 }
 
-.bottom{
-width: 100%;
-height: 45%;
-background-color: transparent;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
-margin-top: 1rem;
+.bottom {
+  width: 100%;
+  height: 45%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
 }
 
-.bottom h2{
+.bottom h2 {
   font-size: 3rem;
   text-align: center;
   color: white;
 }
 
-.bottom h3{
+.bottom h3 {
   font-size: 2.5rem;
   color: var(--green);
 }
 
-.products button{
+.products button {
   width: 70%;
   margin-bottom: 1rem;
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
   font-size: 2.8rem;
   height: 4.5rem;
   word-spacing: 0.5rem;
@@ -302,7 +290,7 @@ margin-top: 1rem;
   color: var(--pink);
 }
 
-.products:hover{
+.products:hover {
   cursor: pointer;
   background: black;
   width: 33rem;
@@ -310,23 +298,21 @@ margin-top: 1rem;
   border: 2px solid white;
 }
 
-
-
-.container2 .product1{
+.container2 .product1 {
   height: 135%;
 }
 
-.container3{
+.container3 {
   width: 100%;
   height: auto;
   background: white;
 }
 
-.container3 .heading{
+.container3 .heading {
   color: black;
 }
 
-.container3 .underline{
+.container3 .underline {
   background: black;
 }
 
@@ -342,19 +328,18 @@ margin-top: 1rem;
   color: black;
 }
 
-.container3 .bottom h3{
+.container3 .bottom h3 {
   color: rgb(0, 218, 0);
 }
 
-.container3 .products:hover{
+.container3 .products:hover {
   cursor: pointer;
   background: white;
   border: 2px solid black;
 }
 
-
-.container4{
-  background:white;
+.container4 {
+  background: white;
   color: white;
   width: 100%;
   display: flex;
@@ -364,22 +349,22 @@ margin-top: 1rem;
   height: auto;
 }
 
-.container2 .product3{
+.container2 .product3 {
   width: 180%;
 }
-.container2 .product2{
+.container2 .product2 {
   width: 120%;
 }
-.container2 .product1{
+.container2 .product1 {
   height: 110%;
 }
 
-#head{
+#head {
   color: black;
   text-decoration: underline;
 }
 
-.offers2{
+.offers2 {
   background: white;
   width: 85%;
   margin-top: 3rem;
@@ -391,7 +376,7 @@ margin-top: 1rem;
   margin-bottom: 10rem;
 }
 
-.parts{
+.parts {
   transition: 1s;
   width: 50rem;
   height: 40rem;
@@ -406,44 +391,41 @@ margin-top: 1rem;
   justify-content: space-between;
 }
 
-
-.parts img{
+.parts img {
   width: 60%;
   height: 60%;
 }
 
-.parts h1{
+.parts h1 {
   font-size: 4rem;
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
 }
 
-.parts p{
+.parts p {
   font-size: 1.8rem;
-  font-family: 'Cormorant SC', serif;
+  font-family: "Cormorant SC", serif;
   font-weight: bolder;
 }
 
-.parts button{
+.parts button {
   font-size: 3rem;
-  font-family: 'Cookie', cursive;
+  font-family: "Cookie", cursive;
   width: 50%;
   word-spacing: 1.2rem;
 }
 
-.parts:hover{
+.parts:hover {
   width: 53rem;
   height: 43rem;
   cursor: pointer;
 }
 
-
-
-.footer{
+.footer {
   width: 100%;
   height: 65vh;
   background: black;
 }
-.footer h1{
+.footer h1 {
   background-color: black;
   background: #e79ea7;
   background: radial-gradient(
@@ -455,7 +437,7 @@ margin-top: 1rem;
   -webkit-text-fill-color: transparent;
 }
 
-.upper{
+.upper {
   width: 100%;
   height: 80%;
   display: flex;
@@ -463,7 +445,7 @@ margin-top: 1rem;
   justify-content: space-between;
 }
 
-.lower{
+.lower {
   width: 100%;
   height: 20%;
   border-top: 4px solid white;
@@ -472,14 +454,13 @@ margin-top: 1rem;
   justify-content: center;
   font-size: 2rem;
   color: white;
-
 }
 
-.lower h2{
+.lower h2 {
   margin-right: 1.5rem;
 }
 
-.images{
+.images {
   width: 100%;
   text-align: center;
   background: white;
@@ -489,25 +470,24 @@ margin-top: 1rem;
   justify-content: center;
 }
 
-.images img{
+.images img {
   width: 18%;
   height: 40%;
   margin: 2rem;
 }
 
-
-.iconsfooter{
+.iconsfooter {
   width: 100%;
   height: 90%;
-  background:black;
-  color:white;
+  background: black;
+  color: white;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
   flex-direction: column;
 }
 
-.input{
+.input {
   width: 95%;
   height: 20%;
   border-radius: 2rem;
@@ -517,12 +497,11 @@ margin-top: 1rem;
   padding: 2rem;
 }
 
-.footer h1{
+.footer h1 {
   font-size: 3rem;
 }
 
-
-.searchbar{
+.searchbar {
   width: 30rem;
   height: 5rem;
   background: black;
@@ -532,7 +511,7 @@ margin-top: 1rem;
   align-items: center;
   justify-content: space-between;
   position: fixed;
-transition: 1s;
+  transition: 1s;
   border: 2px solid white;
   padding: 1rem;
   top: 10%;
@@ -540,16 +519,16 @@ transition: 1s;
   z-index: 100000000;
 }
 
-.searchbar.active{
+.searchbar.active {
   right: 5%;
 }
 
-.searchbar h1{
+.searchbar h1 {
   font-size: 2.5rem;
   padding: 2rem;
 }
 
-.favourite{
+.favourite {
   width: 25rem;
   height: 15rem;
   background: black;
@@ -570,11 +549,11 @@ transition: 1s;
   text-align: center;
 }
 
-.favourite.active{
+.favourite.active {
   right: 5%;
 }
 
-.checkout{
+.checkout {
   width: 40rem;
   height: 40rem;
   background: black;
@@ -591,7 +570,7 @@ transition: 1s;
   z-index: 10000000;
 }
 
-.checkbox{
+.checkbox {
   width: 90%;
   height: 20%;
   background: black;
@@ -604,28 +583,30 @@ transition: 1s;
   padding: 1rem;
 }
 
-.checkbox h2{
+.checkbox h2 {
   text-align: center;
   width: 48%;
   font-size: 2rem;
-  padding: 1rem;}
+  padding: 1rem;
+}
 
-.checkbox p{
+.checkbox p {
   font-size: 1.8rem;
 }
 
-.checkbox img{
+.checkbox img {
   width: 15%;
   height: 100%;
 }
 
-.checkout.active{
+.checkout.active {
   right: 5%;
 }
 
-.login{
-  width: 30rem;height: 30rem;
-  background-color:black;
+.login {
+  width: 30rem;
+  height: 30rem;
+  background-color: black;
   color: white;
   border-radius: 2rem;
   border: 2px solid white;
@@ -640,7 +621,7 @@ transition: 1s;
   z-index: 10000000;
 }
 
-#username{
+#username {
   width: 90%;
   height: 20%;
   background: black;
@@ -651,7 +632,7 @@ transition: 1s;
   border-radius: 2rem;
 }
 
-#password{
+#password {
   width: 90%;
   height: 20%;
   background: black;
@@ -662,71 +643,119 @@ transition: 1s;
   border-radius: 2rem;
 }
 
-.login a{
+.login a {
   font-size: 1.5rem;
   color: whitesmoke;
   word-spacing: 0.7rem;
 }
 
-.login.active{
+.login.active {
   right: 5%;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0px;
 }
 
-
-
-#b p{
+#b p {
   font-size: 1.9rem;
   line-height: 2.7rem;
 }
 
-
-
-
-#b{
- width: 25%;
- height: 100%;
- background:transparent;
- color: white;
- margin: 2rem;
- display: flex;
- align-items: center;
- justify-content:space-between ;
- flex-direction: column;
- text-align: center;
- font-size: 2rem;
- margin-bottom: 3rem;
- padding: 1rem;
- 
+#b {
+  width: 25%;
+  height: 100%;
+  background: transparent;
+  color: white;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
 }
 
-
-#Black{
+#Black {
   background: black;
   color: white;
   border: 2px solid white;
 }
 
-
-
-
 @media (min-aspect-ratio: 16/9) {
-  .video{
+  .video {
     width: 100%;
     height: auto;
   }
-  
 }
 
 @media (max-aspect-ratio: 16/9) {
-  .video{
+  .video {
     width: auto;
     height: 100%;
   }
-  
 }
+@media only screen and (max-width: 600px) {
+  .header h2 {
+    font-size: 2.6rem;
+  }
+  .header a {
+    font-size: 1.5rem;
+    padding-left: 1.6rem;
+  }
+  .icons {
+    font-size: 0.2rem;
+    padding-right: 1rem;
+  }
 
+  .maintext {
+    height: 100vh;
+  }
+  .first {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .second {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  button {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .rightside img {
+    height: 83%;
+  }
 
+  .offers2 {
+    height: 90rem;
+  }
+
+  .footer h1 {
+    font-size: 2rem;
+  }
+
+  #b p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .lower {
+    font-size: 1.5rem;
+  }
+  .input {
+    height: 1%;
+    width: 90%;
+  }
+  .images {
+    height: 15%;
+  }
+  .images img {
+    height: 40%;
+    margin: 0.4rem;
+  }
+  .iconsfooter {
+    font-size: 1.2rem;
+  }
+}
