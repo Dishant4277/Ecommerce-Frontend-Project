@@ -698,8 +698,11 @@ button:hover {
   }
 }
 @media only screen and (max-width: 600px) {
-  body{
-    overflow: hidden;
+ *{
+    width: auto;
+  }
+  .products button{
+    font-size: 2rem;
   }
   .header h2 {
     font-size: 2.6rem;
@@ -744,22 +747,22 @@ button:hover {
   }
 
   #b p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 2rem;
   }
   .lower {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .input {
     height: 1%;
     width: 90%;
   }
   .images {
-    height: 15%;
+    height: 10%;
   }
   .images img {
     height: 40%;
-    margin: 0.4rem;
+    margin: 0.2rem;
   }
   .iconsfooter {
     font-size: 1rem;
