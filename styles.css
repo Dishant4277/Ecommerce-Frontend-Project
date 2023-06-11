@@ -698,6 +698,9 @@ button:hover {
   }
 }
 @media only screen and (max-width: 600px) {
+  body{
+    overflow: hidden;
+  }
   .header h2 {
     font-size: 2.6rem;
   }
