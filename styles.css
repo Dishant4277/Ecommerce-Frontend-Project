@@ -709,6 +709,9 @@ button:hover {
     font-size: 0.2rem;
     padding-right: 1rem;
   }
+  .video{
+  height:90rem;
+  }
 
   .maintext {
     height: 100vh;
