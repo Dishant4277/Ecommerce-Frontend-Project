@@ -710,7 +710,7 @@ button:hover {
     padding-right: 1rem;
   }
   .video{
-  height:90rem;
+  height:85rem;
   }
 
   .maintext {
@@ -745,7 +745,7 @@ button:hover {
     line-height: 2rem;
   }
   .lower {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .input {
     height: 1%;
@@ -759,6 +759,6 @@ button:hover {
     margin: 0.4rem;
   }
   .iconsfooter {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
